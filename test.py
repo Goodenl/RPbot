@@ -22,8 +22,9 @@ while run:
         if event.type == pygame.QUIT:
             run = False
 
+    # register key pressed
     keys = pygame.key.get_pressed()
-
+    # check need button
     if keys[pygame.K_LEFT]:
         x -= vel
     if keys[pygame.K_RIGHT]:
